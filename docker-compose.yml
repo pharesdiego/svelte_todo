@@ -9,7 +9,7 @@ services:
     ports:
       - 4000:4000
     build:
-      context: ./todo_api
+      context: ./svelte_todo_api
       # Happy life
       args:
         - DATABASE_URL=ecto://postgres:snowden@postgres_db/todo_api
@@ -17,7 +17,7 @@ services:
     depends_on:
       - phoenix_server
     build:
-      context: ./todo_web
+      context: ./svelte_todo_web
       args:
         - API_HOST=phoenix_server
     environment:
