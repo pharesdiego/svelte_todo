@@ -1,8 +1,15 @@
 # Svelte Todo App
 
 ### How to run the app
+```bash
+# Make sure submodules are updated/fetched
+git submodule update --init --recursive
 
-Running `docker-compose up -d` will provide all the required services. The web app can be found at http://localhost:5001 and the API at http://localhost:4000.
+# Run services
+docker-compose up -d
+```
+
+This will provide all the required services. The web app can be found at http://localhost:5001 and the API at http://localhost:4000.
 
 ### Description
 
