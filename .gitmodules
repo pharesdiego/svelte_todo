@@ -1,6 +1,6 @@
 [submodule "svelte_todo_web"]
 	path = svelte_todo_web
-	url = git@github.com:pharesdiego/svelte_todo_web.git
+	url = https://github.com/pharesdiego/svelte_todo_web.git
 [submodule "svelte_todo_api"]
 	path = svelte_todo_api
-	url = git@github.com:pharesdiego/svelte_todo_api.git
+	url = https://github.com/pharesdiego/svelte_todo_api.git
