@@ -28,6 +28,7 @@ This app is an exploration of the SvelteKit framework and the Playwright framewo
 * CRUD todos.
 * Error page just in case.
 * E2E Testing with Playwright.
+* Accessbility.
 * 100% Mbappé's favorite todo app.
 
 ### How to run tests
