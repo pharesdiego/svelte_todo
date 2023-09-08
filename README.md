@@ -1,5 +1,7 @@
 # Svelte Todo App
 
+*"From SSR to Docker to Playwright, it's everything you never knew you needed in a todo app." - Mbappé*
+
 ### How to run the app
 ```bash
 # Make sure submodules are updated/fetched
@@ -32,7 +34,7 @@ This app is an exploration of the SvelteKit framework and the Playwright framewo
 * 100% Mbappé's favorite todo app.
 
 ### How to run tests
-Make sure everything is running in docker and then run `npm run test`.
+Make sure everything is running in docker, go to `svelte_todo_web` and then run `npm run test`.
 
 ### Main technologies used
 
@@ -41,4 +43,3 @@ Make sure everything is running in docker and then run `npm run test`.
 * Elixir
 * Phoenix
 * PostgreSQL
-
