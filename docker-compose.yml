@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  postgres_db:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=snowden
+  phoenix_server:
+    ports:
+      - 4000:4000
+    build:
+      context: ./todo_api
+      # Happy life
+      args:
+        - DATABASE_URL=ecto://postgres:snowden@postgres_db/todo_api
+  svelte_web:
+    depends_on:
+      - phoenix_server
+    build:
+      context: ./todo_web
+      args:
+        - API_HOST=phoenix_server
+    environment:
+      - PORT=5001
+    ports:
+      - 5001:5001
